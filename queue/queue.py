@@ -29,10 +29,9 @@ return elements in First In First Out order.
    as the underlying storage structure.
    Make sure the Queue tests pass."""
 
-
-
+import sys
+sys.path.append('../singly_linked_list')
 from singly_linked_list import LinkedList
-
 
 class Queue:
     def __init__(self):
@@ -56,7 +55,9 @@ class Queue:
 """
 3. What is the difference between using an array vs. a linked list when 
    implementing a Queue?"""
-
+# Implementing a Queue in an array is preety simple to enqueue append to the array and
+# to dequeue pop from the array. However with Linked Lists things are different. enqueueing
+# and dequeueing reques changing the pointers to keep the linked list functional.
    
 """   
 Stretch: What if you could only use instances of your Stack class to implement the Queue?
